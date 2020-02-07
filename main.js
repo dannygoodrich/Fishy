@@ -38,10 +38,10 @@ function HandleCollision(hero, fish) {
             points += 1;
             score.textContent = `Score: ${points}`;
 
-    } else if (hero.x < fish.x + fish.width
-        && hero.x + hero.width > fish.x
-        && hero.y < fish.y + fish.height
-        && hero.y + hero.height > fish.y
+    } else if (hero.x < fish.x + (fish.width - 10)
+        && hero.x + (hero.width -20) > fish.x
+        && hero.y < fish.y + (fish.height - 15)
+        && hero.y + (hero.height - 15) > fish.y
         && hero.area < fish.area) {
             hero.alive = false;
             
@@ -193,7 +193,7 @@ function movementHandler(e) {
             break;
         // a
         case (65):
-            state.hero.x = Math.max(0, state.hero.x - 7);
+            state.hero.x = Math.max(0, state.hero.x - 6);
             break;
         // s
         case (83):
@@ -205,7 +205,7 @@ function movementHandler(e) {
             break;
         // d
         case (68):
-            newPos = state.hero.x + 3;
+            newPos = state.hero.x + 4;
             if (newPos + state.hero.width > gameWidth) {
                 newPos = gameWidth - state.hero.width;
             }
