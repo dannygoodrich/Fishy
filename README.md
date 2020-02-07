@@ -2,7 +2,7 @@ Title: Fishy
 Live Site:
 
 Wireframes:
-[IMG_1045.JPG]
+[IMG_1045.JPG](IMG_1045.JPG)
 
 
 Planning: I didnt plan very much. After the Canvas Craler codealong, I had the gist of how my game would work. I had to create a hero("fishy"), and spawn other fishes, of different sizes, that would move from right to left. first I needed to create the game board with canvas. Then I  would need to create all of the elements that would be in the game. These elements would be part of a "game state" that would be running in a "game loop". Then I would need a collision detection function, that either made the fishy bigger or told the user the game was over. I also needed a function for controlling the movement of the player.
