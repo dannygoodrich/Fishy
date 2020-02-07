@@ -1,0 +1,74 @@
+html {
+    margin: auto;
+}
+body {
+    text-align: center;
+    background-color: black;
+    
+}
+
+.fishy {
+    color: rgb(52, 196, 221);
+}
+div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    color: rgb(52, 196, 221);
+    justify-content: center;
+}
+canvas {
+    background-color: rgb(18, 56, 92);
+    border: 2px solid white;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes example {
+    from {background-color: rgb(18, 56, 92);}
+    to {background-color: rgb(25, 96, 124);}
+
+}
+
+.row {
+    
+    align-content: center;
+    align-items: center;
+}
+
+.container {
+    margin: auto;
+    justify-content: center;
+    width: 800px;
+    position: relative;
+    border: 1px solid green;
+    align-items: center;
+
+    
+}
+
+
+#score {
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: none;
+
+}
+#restart {
+    margin: auto;
+    text-align: center;
+    align-self: center;
+}
+ button:hover {
+     border: 4px solid blue;
+ }
+ button {
+     margin: auto;
+     text-align: center;
+ }
