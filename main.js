@@ -25,6 +25,13 @@ let ctx = game.getContext('2d');
 game.height = gameHeight;
 game.width = gameWidth;
 
+function drawScore() {
+    ctx.font = "16px Sans-serif";
+    ctx.fillStyle = "#0095DD";
+    ctx.fillText("Score: "+ points, 400, 20);
+    document.getElementById('ocean').play();
+}
+
 function HandleCollision(hero, fish) {
     if (hero.alive) {
     if (hero.x < fish.x + (fish.width - 10)
@@ -51,12 +58,12 @@ function HandleCollision(hero, fish) {
 };
     }
 }
-function drawScore() {
-    ctx.font = "16px Sans-serif";
-    ctx.fillStyle = "#0095DD";
-    ctx.fillText("Score: "+ points, 400, 20);
-    document.getElementById('ocean').play();
-}
+// function drawScore() {
+//     ctx.font = "16px Sans-serif";
+//     ctx.fillStyle = "#0095DD";
+//     ctx.fillText("Score: "+ points, 400, 20);
+//     document.getElementById('ocean').play();
+// }
 
 function gameState() {
     this.hero = new Fish(100, 50, 'white', 70, 70, coolFish);
