@@ -10,13 +10,13 @@ let count = 0;
 let lvl = 1;
 let frameIndex = 1;
 let rocks = new Image();
-rocks.src = "fishTilesheet.png";
+rocks.src = "assets/fishTilesheet.png";
 let coolFish = new Image();
-coolFish.src = "bluefish1.png";
+coolFish.src = "assets/bluefish1.png";
 let badFish = new Image();
-badFish.src = "__cartoon_fish_06_red_swim.png";
+badFish.src = "assets/__cartoon_fish_06_red_swim.png";
 let gameOverImg =new Image();
-gameOverImg.src = "gameover.png";
+gameOverImg.src = "assets/gameover.png";
 button = document.getElementById('restart');
 let game = document.getElementById('game');
 
