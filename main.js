@@ -285,7 +285,7 @@ function endGame(state) {
     
     ctx.drawImage(gameOverImg, 0, 0, 800, 800);
     highScores.push(points);
-    badFish.src = "__cartoon_fish_06_black_swim.png";
+    badFish.src = "assets/blackfish1.png"
     stop(setInterval);
 
     clearInterval(interval);
